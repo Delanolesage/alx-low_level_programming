@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+  char a;
   long int b = 12;
   long long int c = 120;
   float d = 1.2;
