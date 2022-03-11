@@ -12,13 +12,14 @@ int main(void)
 	while (n < 16)
 	{
 		if (n < 10)
-			printf("%d", n);
-		else {
+			putchar(n + '0');
+		else
+		{
 			putchar(a);
 			a++;
 		}
 		n++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
