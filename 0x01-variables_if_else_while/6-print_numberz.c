@@ -10,7 +10,7 @@ int main(void)
 
 	while (n < 10)
 	{
-		putchar((char)n);
+		putchar(itoa(n));
 		n++;
 	}
 	putchar('\n');
