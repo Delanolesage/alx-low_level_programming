@@ -18,9 +18,6 @@ int main(void)
 		{
 			while (k <= 9)
 			{
-				k = n - ((n / 10) *10);
-				j = (n - ((n / 100) * 100)) / 10;
-				l = n / 100;
 				putchar(l + '0');
 				putchar(j + '0');
 				putchar(k + '0');
