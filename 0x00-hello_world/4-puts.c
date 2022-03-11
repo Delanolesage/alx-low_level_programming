@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
- * This is the main function
+ * main - Entry point
+ *
+ * return: Always 0 (Success)
  */
 int main(void)
 {
