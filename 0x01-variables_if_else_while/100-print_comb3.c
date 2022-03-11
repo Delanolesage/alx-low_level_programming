@@ -22,9 +22,6 @@ int main(void)
 				putchar((n % 10) + '0');
 				break;
 			}
-		}
-		if (n < 99)
-		{
 			putchar(',');
 			putchar(' ');
 		}
