@@ -7,7 +7,6 @@
 int main(void)
 {
 	char z = 'z';
-	int n = 0;
 
 	while (z >= 'a')
 	{
