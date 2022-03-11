@@ -10,6 +10,7 @@ int main(void)
 	char a = 'a';
 
 	while (n < 16)
+	{
 		if (n < 10)
 			printf("%d", n);
 		else {
