@@ -4,9 +4,9 @@
 /* more headers goes there */
 
 /**
- * main - entry point
+ * main - Program entry point
  *
- * Returm: 0 if success
+ * Return: 0 on success. Error code otherwise
  */
 int main(void)
 {
@@ -21,6 +21,7 @@ int main(void)
 	else if (lastDigit == 0)
 		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
 	else if (lastDigit < 6 && lastDigit != 0)
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n,lastDigit);
+		printf("Last digit of %d is %d and is less than 6 and 
+		       not 0\n", n, lastDigit);
 	return (0);
 }
