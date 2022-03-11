@@ -12,7 +12,7 @@ int main(void)
 	while (n < 100)
 	{
 		i = n;
-		while (true)
+		while (1)
 		{
 			if (i / 10 % 10 > i % 10)
 				break;
