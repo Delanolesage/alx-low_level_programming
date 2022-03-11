@@ -7,11 +7,21 @@
 int main(void)
 {
 	int n = 0;
+	int i;
 
 	while (n < 100)
 	{
-		putchar((n / 10) + '0');
-		putchar((n % 10) + '0');
+		while (i = n)
+		{
+			if (i / 10 % 10 > i % 10)
+				break;
+			if ((i /= 10) == 0)
+			{
+				putchar((n / 10) + '0');
+				putchar((n % 10) + '0');
+				break;
+			}
+		}
 		if (n < 99)
 		{
 			putchar(',');
