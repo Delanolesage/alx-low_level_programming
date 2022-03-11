@@ -18,14 +18,15 @@ int main(void)
 				break;
 			k = n - ((n / 10) *10);
 			j = (n - ((n / 100) * 100)) / 10;
+			l = n / 100;
 			i /= 100;
 			if (i == 0)
 			{
 				if (i != j && i != k && j != k)
 				{
-					putchar((n / 100) + '0');
-					putchar((n / 10) + '0');
-					putchar((n % 10) + '0');
+					putchar(l + '0');
+					putchar(j + '0');
+					putchar(k + '0');
 					if (n < 789)
 					{
 						putchar(',');
