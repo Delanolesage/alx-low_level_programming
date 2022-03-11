@@ -11,19 +11,26 @@ int main(void)
 	i = 0;
 	while (i <= 9)
 	{
-		j = i + 1;
+		j = 0;
 		while (j <= 9)
 		{
-			k = j + 1;
+			k = 0;
 			while (k <= 9)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (((i * 100) + (j * 10) + k) != 789)
+				l = k + 1;
+				while (l <= 9)
 				{
-					putchar(',');
+					putchar(i + '0');
+					putchar(j + '0');
 					putchar(' ');
+					putchar(k + '0');
+					putchar(l + '0');
+					if (((i * 100) + (j * 10) + k) != 789)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					l++;
 				}
 				k++;
 			}
