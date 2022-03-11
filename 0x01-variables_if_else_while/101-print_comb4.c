@@ -8,35 +8,28 @@ int main(void)
 {
 	int n = 0;
 	int i, j, k, l;
+	i = 0;
+	j = i +1;
+	k = j + 1;
 
-	while (n <= 999)
+	while (i <= 9)
 	{
-		i = n;
-		while (i < 999)
+		while (j <= 9)
 		{
-			if (i / 100 % 10 > i % 10)
-				break;
-			k = n - ((n / 10) *10);
-			j = (n - ((n / 100) * 100)) / 10;
-			l = n / 100;
-			i /= 100;
-			if (i == 0)
+			while (k <= 9)
 			{
-				if (i != j && i != k && j != k)
-				{
-					putchar(l + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (n < 789)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				break;
+				k = n - ((n / 10) *10);
+				j = (n - ((n / 100) * 100)) / 10;
+				l = n / 100;
+				putchar(l + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				k++;
 			}
+			j++;
 		}
-		n++;
+		
+		i++;
 	}
 	putchar('\n');
 	return (0);
