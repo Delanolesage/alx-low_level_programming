@@ -7,7 +7,7 @@
 int main(void)
 {
 	int n = 0;
-	int i, j, k;
+	int i, j, k, l;
 
 	while (n <= 999)
 	{
