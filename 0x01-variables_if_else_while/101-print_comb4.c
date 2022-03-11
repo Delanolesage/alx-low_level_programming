@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-	int n = 0;
 	int i, j, k, l;
 	i = 0;
 	j = i +1;
@@ -18,7 +17,7 @@ int main(void)
 		{
 			while (k <= 9)
 			{
-				putchar(l + '0');
+				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
 				k++;
