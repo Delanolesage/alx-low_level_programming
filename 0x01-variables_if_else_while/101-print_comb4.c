@@ -8,13 +8,13 @@ int main(void)
 {
 	int i, j, k;
 	i = 0;
-	j = i +1;
-	k = j + 1;
 
 	while (i <= 9)
 	{
+		j = i +1;
 		while (j <= 9)
 		{
+			k = j + 1;
 			while (k <= 9)
 			{
 				putchar(i + '0');
