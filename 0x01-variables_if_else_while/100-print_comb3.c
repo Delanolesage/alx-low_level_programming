@@ -16,12 +16,17 @@ int main(void)
 		{
 			if (i / 10 % 10 > i % 10)
 				break;
-			a = i / 10;
-			if (a == 0)
+			//a = i / 10;
+			if ((i /= 10) == 0)
 			{
 				putchar((n / 10) + '0');
 				putchar((n % 10) + '0');
 				break;
+			}
+			if (i != 99)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 		n++;
