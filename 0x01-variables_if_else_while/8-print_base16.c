@@ -7,10 +7,15 @@
 int main(void)
 {
 	int n = 0;
+	char a = 'a';
 
 	while (n < 16)
-	{
-		printf("%d", n);
+		if (n < 10)
+			printf("%d", n);
+		else {
+			putchar(a);
+			a++;
+		}
 		n++;
 	}
 	printf("\n");
