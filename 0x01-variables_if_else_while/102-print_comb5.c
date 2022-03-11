@@ -25,7 +25,7 @@ int main(void)
 					putchar(' ');
 					putchar(k + '0');
 					putchar(l + '0');
-					if (((i * 100) + (j * 10) + k) != 789)
+					if (1 == 1)
 					{
 						putchar(',');
 						putchar(' ');
