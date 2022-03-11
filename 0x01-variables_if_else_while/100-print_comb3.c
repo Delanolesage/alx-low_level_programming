@@ -7,7 +7,7 @@
 int main(void)
 {
 	int n = 0;
-	int i;
+	int i, a;
 
 	while (n <= 99)
 	{
@@ -16,7 +16,8 @@ int main(void)
 		{
 			if (i / 10 % 10 > i % 10)
 				break;
-			if ((i /= 10) == 0)
+			a = i / 10;
+			if (a == 0)
 			{
 				if ((n % 11) != 0 && n != 11)
 				{
