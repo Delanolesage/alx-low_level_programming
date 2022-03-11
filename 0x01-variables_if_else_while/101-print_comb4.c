@@ -9,21 +9,22 @@ int main(void)
 	int n = 0;
 	int i;
 
-	while (n <= 99)
+	while (n <= 999)
 	{
 		i = n;
-		while (i < 99)
+		while (i < 999)
 		{
-			if (i / 10 % 10 > i % 10)
+			if (i / 100 % 10 > i % 10)
 				break;
 			i /= 10;
 			if (i == 0)
 			{
 				if ((n % 11) != 0 && n != 11)
 				{
+					putchar((n / 100) + '0');
 					putchar((n / 10) + '0');
 					putchar((n % 10) + '0');
-					if (n < 89)
+					if (n < 789)
 					{
 						putchar(',');
 						putchar(' ');
