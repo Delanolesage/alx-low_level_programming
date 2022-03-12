@@ -27,11 +27,11 @@ int main(void)
 						putchar(' ');
 						putchar(k + '0');
 						putchar(l + '0');
-					}
-					if (1 == 1)
-					{
-						putchar(',');
-						putchar(' ');
+						if (1 == 1)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 					l++;
 				}
