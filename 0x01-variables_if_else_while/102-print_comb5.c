@@ -4,43 +4,29 @@
  *
  * Return: 0 on success. Error code otherwise
  */
-int main(void)
+int main()
 {
-	int i, j, k, l;
-
-	i = 0;
-	while (i <= 9)
+    int a, b, c;
+    
+	for (int i = 0; i <= 9; i++)
 	{
-		j = 0;
-		while (j <= 9)
-		{
-			k = 0;
-			while (k <= 9)
-			{
-				l = 0;
-				while (l <= 9)
-				{
-					if (k != 0 && l != 0)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(k + '0');
-						putchar(l + '0');
-						if (1 == 1)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					l++;
-				}
-				k++;
-			}
-			j++;
+	    for (int j = 0; j <= 9; j++)
+	    {
+	        for (int k = 0; k <= 9; k++)
+	        {
+	            for (int l = 1; l <= 9; l++)
+	            {
+			putchar(i + '0');
+			putchar(j + '0');
+			putchar(' ');
+			putchar(k + '0');
+			putchar(l + '0');
+			putchar(',');
+			putchar(' ');
+		    }
 		}
-		i++;
+	    }
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
