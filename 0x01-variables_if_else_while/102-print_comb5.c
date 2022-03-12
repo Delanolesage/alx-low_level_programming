@@ -6,15 +6,15 @@
  */
 int main()
 {
-	int a, b, c;
+	int i, j, k, l;
 	
-	for (int i = 0; i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (int j = 0; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (int k = 0; k <= 9; k++)
+			for (k = 0; k <= 9; k++)
 			{
-				for (int l = 1; l <= 9; l++)
+				for (l = 1; l <= 9; l++)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
