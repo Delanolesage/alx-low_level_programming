@@ -4,10 +4,10 @@
  *
  * Return: 0 on success. Error code otherwise
  */
-int main()
+int main(void)
 {
 	int i, j, k, l;
-	
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
@@ -28,5 +28,5 @@ int main()
 		}
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
