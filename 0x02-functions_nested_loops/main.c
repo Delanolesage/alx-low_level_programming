@@ -16,7 +16,7 @@ int _putchar(char c)
  *
  * print_alphabet - print the alphabet
  *
- *
+ * void function: nothing to return
  */
 void print_alphabet(void)
 {
