@@ -12,7 +12,7 @@ int main(void)
 {
 	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	int length = sizeof(ch) / sizeof(char);
-	for (int i = 0, i < length; i++)
+	for (int i = 0; i < length; i++)
 		_putchar(ch[i]);
 	putchar('\n');
 	return (0);
