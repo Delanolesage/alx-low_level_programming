@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
- * @n: the number to check
+ * _abs - gives the absolute value of an integer
+ * @n: the number to compute
  *
- * Return: 1 if positive, 0 if zero and -1 if negative
+ * Return: the absolute integer
  */
-int print_sign(int n)
+int _abs(int n)
 {
 	if (n > 0)
 	{
