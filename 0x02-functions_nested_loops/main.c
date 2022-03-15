@@ -11,21 +11,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
-/**
- *
- * print_alphabet - print the alphabet
- *
- * void function: nothing to return
- */
-void print_alphabet(void)
-{
-	char a = 'a';
-
-	while (a < 'z')
-	{
-		_putchar(a);
-		a++;
-	}
-	_putchar('\n');
-}
