@@ -10,11 +10,10 @@
  */
 int main(void)
 {
-	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 	int length = sizeof(ch) / sizeof(char);
 	int i;
 	for (i = 0; i < length; i++)
 		_putchar(ch[i]);
-	putchar('\n');
 	return (0);
 }
