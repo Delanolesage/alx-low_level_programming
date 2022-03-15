@@ -12,14 +12,20 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+/**
+ *
+ * print_alphabet - print the alphabet
+ *
+ *
+ */
 void print_alphabet(void)
 {
 	char a = 'a';
 
 	while (a < 'z')
 	{
-		putchar(a);
+		_putchar(a);
 		a++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
