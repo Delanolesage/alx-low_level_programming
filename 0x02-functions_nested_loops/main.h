@@ -1,5 +1,3 @@
-# define main.h
-
 #include <unistd.h>
 
 /**
