@@ -5,7 +5,7 @@
  *
  * void: nothing to return
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int n;
 	int h2, h1, m2, m1;
@@ -17,11 +17,11 @@ int jack_bauer(void)
 
 	for (n = 0; n < 1440; n++)
 	{
-		_putchar('h2' + '0');
-		_putchar('h1' + '0');
+		_putchar(h2 + '0');
+		_putchar(h1 + '0');
 		_putchar(':');
-		_putchar('m2' + '0');
-		_putchar('m1' + '0');
+		_putchar(m2 + '0');
+		_putchar(m1 + '0');
 		_putchar('\n');
 		m1++;
 		if (m1 > 9)
