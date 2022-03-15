@@ -16,11 +16,11 @@ int main(void)
  *
  * void function: nothing to return
  */
-void print_alphabet(void)
+void print_alphabet()
 {
 	char a = 'a';
 
-	while (a < 'z')
+	while (a <= 'z')
 	{
 		_putchar(a);
 		a++;
