@@ -1,7 +1,5 @@
 #include <unistd.h>
 
-#define int _putchar(char c);
-
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -12,4 +10,16 @@
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
+}
+
+void print_alphabet(void)
+{
+	char a = 'a';
+
+	while (a < 'z')
+	{
+		putchar(a);
+		a++;
+	}
+	putchar('\n');
 }
