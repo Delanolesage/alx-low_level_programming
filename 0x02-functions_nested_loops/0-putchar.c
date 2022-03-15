@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include <main.h>
 /* more headers goes there */
 
 /**
@@ -13,7 +13,7 @@ int main(void)
 	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	length = sizeof(ch) / sizeof(char);
 	for (int i = 0, i < length; i++)
-		putchar(ch[i]);
+		_putchar(ch[i]);
 	putchar('\n');
 	return (0);
 }
