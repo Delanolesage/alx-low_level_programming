@@ -15,12 +15,14 @@ int main(void)
 
 	for (i = 1; i <= 50; ++i)
 	{
+		while (fiboSum <= stop) {
 		f_1 = f_2;
 		f_2 = fiboSum;
 		fiboSum = f_1 + f_2;
 		if (fiboSum >= stop)
 		{
 			printf("%ld ", fiboSum);
+		}
 		}
 	}
 	printf("\n");
