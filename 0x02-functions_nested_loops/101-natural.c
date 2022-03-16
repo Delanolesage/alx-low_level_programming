@@ -17,5 +17,6 @@ int main(void)
 			fiboSum += i;
 		}
 	}
+	printf("%d\n", fiboSum);
 	return (0);
 }
