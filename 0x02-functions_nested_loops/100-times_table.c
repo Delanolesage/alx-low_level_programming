@@ -19,7 +19,7 @@ void print_times_table(int n)
 				z = x * y;
 				if (z == 0 && y == 0)
 					_putchar(z + '0');
-				else if (z > 9)
+				else if (z > 9 && z <= 99)
 				{
 					k = z % 10;
 					z /= 10;
