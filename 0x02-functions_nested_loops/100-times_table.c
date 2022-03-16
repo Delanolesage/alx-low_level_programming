@@ -32,8 +32,8 @@ void print_times_table(int n)
 				else if (z > 99)
 				{
 					k = z % 10;
+					l = z /100;
 					z /= 10;
-					l /= 100;
 					_putchar(',');
 					_putchar(' ');
 					_putchar(z + '0');
