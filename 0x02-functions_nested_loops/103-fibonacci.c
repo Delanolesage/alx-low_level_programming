@@ -21,7 +21,6 @@ int main(void)
 		if (fiboSum >= stop)
 		{
 			printf("%ld ", fiboSum);
-			//break;
 		}
 	}
 	printf("\n");
