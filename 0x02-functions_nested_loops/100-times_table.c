@@ -32,7 +32,7 @@ void print_times_table(int n)
 				else if (z > 99)
 				{
 					k = z % 10;
-					l = z /100;
+					l = z / 100;
 					m = (z / 10) % 10;
 					_putchar(',');
 					_putchar(' ');
