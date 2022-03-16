@@ -12,13 +12,13 @@ int main(void)
 	int f_2 = 1;
 	int fiboSum = f_1 + f_2;
 
-	for (i = 3; i <= 100; ++i)
+	for (i = 1; i <= 100; ++i)
 	{
 		printf("%d", fiboSum);
 		f_1 = f_2;
 		f_2 = fiboSum;
 		fiboSum = f_1 + f_2;
-		if (i != 97)
+		if (i != 100)
 			printf(", ");
 	}
 	printf("%d\n", fiboSum);
