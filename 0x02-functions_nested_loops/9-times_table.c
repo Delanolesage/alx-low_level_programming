@@ -1,23 +1,37 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print the alphabet 10 times
+ * times_table - print the 9 times table
  *
- * void function: nothing to return
+ * void function: nothing to return just print
  */
-void print_alphabet_x10(void)
+void times_table(void)
 {
-	char a = 'a';
 	int n = 0;
+	int t = 0;
+	int result;
 
 	while (n < 10)
 	{
-		while (a <= 'z')
+		while (t < 10)
 		{
-			_putchar(a);
-			a++;
+			result = n * t;
+			if (t == 0)
+				_putchar('0');
+			else
+			{
+				if ((result / 10) == 0)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar((result / 10) + '0');
+				}
+			}
+			_putchar((result % 10) + '0');
+			t++;
 		}
-		a = 'a';
 		n++;
 		_putchar('\n');
 	}
