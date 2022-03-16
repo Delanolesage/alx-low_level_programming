@@ -36,9 +36,9 @@ void print_times_table(int n)
 					m = z / 10;
 					_putchar(',');
 					_putchar(' ');
+					_putchar(l + '0');
 					_putchar(m + '0');
 					_putchar(k + '0');
-					_putchar(l + '0');
 				}
 				else
 				{
