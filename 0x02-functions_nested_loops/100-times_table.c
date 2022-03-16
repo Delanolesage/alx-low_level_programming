@@ -25,6 +25,7 @@ void print_times_table(int n)
 					z /= 10;
 					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(z + '0');
 					_putchar(k + '0');
 				}
