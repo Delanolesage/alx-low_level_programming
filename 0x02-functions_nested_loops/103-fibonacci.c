@@ -11,6 +11,7 @@ int main(void)
 	long int f_1 = 0;
 	long int f_2 = 1;
 	long int fiboSum = f_1 + f_2;
+	lont int stop = 4000000;
 
 	for (i = 1; i <= 50; ++i)
 	{
@@ -18,8 +19,10 @@ int main(void)
 		f_1 = f_2;
 		f_2 = fiboSum;
 		fiboSum = f_1 + f_2;
-		if (i != 50)
+		if (fiboSum < stop)
 			printf(", ");
+		if (fiboSum >= stop)
+			break;
 	}
 	printf("\n");
 	return (0);
