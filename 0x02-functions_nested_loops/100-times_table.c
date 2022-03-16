@@ -33,7 +33,7 @@ void print_times_table(int n)
 				{
 					k = z % 10;
 					l = z /100;
-					m = (z - l) / 10;
+					m = (z / 10) % 10;
 					_putchar(',');
 					_putchar(' ');
 					_putchar(l + '0');
