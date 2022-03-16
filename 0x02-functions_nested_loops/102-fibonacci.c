@@ -8,14 +8,17 @@
 int main(void)
 {
 	int i;
-	int fiboSum = 0;
+	int f_1 = 0;
+	int f_2 = 1;
+	int fiboSum = f_1 + f_2;
 
-	for (i = 0; i < 1024; i++)
+	printf("%d, %d, ", f_1, f_2);
+	for (i = 3; i <= 98; ++i)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
-		{
-			fiboSum += i;
-		}
+		printf("%d, ", fiboSum);
+		f_1 = f_2;
+		f_2 = fiboSum;
+		fiboSum = f_1 + f_2;
 	}
 	printf("%d\n", fiboSum);
 	return (0);
