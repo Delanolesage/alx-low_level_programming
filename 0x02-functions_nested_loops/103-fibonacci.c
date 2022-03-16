@@ -8,21 +8,22 @@
 int main(void)
 {
 	int i;
-	long int f_1 = 0;
-	long int f_2 = 1;
+	long int f_1 = 1;
+	long int f_2 = 2;
 	long int fiboSum = f_1 + f_2;
 	long int stop = 4000000;
+	int total = 0;
 
 	for (i = 1; i <= 50; i++)
 	{
-		while (fiboSum < stop)
+		while (total < stop)
 		{
 			f_1 = f_2;
 			f_2 = fiboSum;
 			fiboSum = f_1 + f_2;
-			printf("%ld ", fiboSum);
+			total += fiboSum;
 		}
 	}
-	printf("\n");
+	printf("%d\n", total);
 	return (0);
 }
