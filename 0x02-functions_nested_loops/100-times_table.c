@@ -21,24 +21,19 @@ void print_times_table(int n)
 					_putchar(z + '0');
 				else if (z > 9 && z <= 99)
 				{
-					k = z % 10;
-					m = z / 10;
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(m + '0');
-					_putchar(k + '0');
+					_putchar((z / 10) + '0');
+					_putchar((z % 10) + '0');
 				}
 				else if (z > 99)
 				{
-					k = z % 10;
-					l = z / 100;
-					m = (z / 10) % 10;
 					_putchar(',');
 					_putchar(' ');
-					_putchar(l + '0');
-					_putchar(m + '0');
-					_putchar(k + '0');
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
 				}
 				else
 				{
