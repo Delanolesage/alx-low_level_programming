@@ -11,7 +11,7 @@ int main(void)
 	long int f_1 = 0;
 	long int f_2 = 1;
 	long int fiboSum = f_1 + f_2;
-	lont int stop = 4000000;
+	long int stop = 4000000;
 
 	for (i = 1; i <= 50; ++i)
 	{
