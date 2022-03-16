@@ -13,7 +13,7 @@ int main(void)
 	long int fiboSum = f_1 + f_2;
 	long int stop = 4000000;
 
-	for (i = 1; i <= 50; ++i)
+	for (i = 1; i <= 50; i++)
 	{
 		while (fiboSum <= stop) {
 		f_1 = f_2;
