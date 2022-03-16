@@ -18,10 +18,10 @@ int main(void)
 	{
 		while (total < stop)
 		{
+			total += fiboSum;
 			f_1 = f_2;
 			f_2 = fiboSum;
 			fiboSum = f_1 + f_2;
-			total += fiboSum;
 		}
 	}
 	printf("%d\n", total);
