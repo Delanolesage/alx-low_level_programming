@@ -20,8 +20,8 @@ int main(void)
 		fiboSum = f_1 + f_2;
 		if (fiboSum >= stop)
 		{
-			printf("%ld", fiboSum);
-			break;
+			printf("%ld ", fiboSum);
+			//break;
 		}
 	}
 	printf("\n");
