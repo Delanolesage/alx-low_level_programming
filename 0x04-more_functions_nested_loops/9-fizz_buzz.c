@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point prints fizz buzz or the number
- * 
+ * main - Entry point prints fizz buzz or the number 
  * Return: 0 if success
  */
 int main(void)
