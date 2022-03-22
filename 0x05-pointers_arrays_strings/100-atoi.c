@@ -21,7 +21,6 @@ int _atoi(char *s)
 			countInt++;
 	}
 
-	size = countInt - 1;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
