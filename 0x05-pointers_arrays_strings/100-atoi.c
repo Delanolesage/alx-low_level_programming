@@ -9,14 +9,17 @@
  */
 int _atoi(char *s)
 {
-	int i, j, k, l, minus, countInt, result;
+	int i, j, k, l, n, p, minus, countInt, result;
 
 	minus = 0;
 	countInt = 0;
 	l = 0;
+	n = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		if (s[i] == ';')
+			break;
 		if (s[i] <= '9' && s[i] >= '0')
 			countInt++;
 	}
@@ -35,13 +38,14 @@ int _atoi(char *s)
 		result = 0;
 	else
 	{
-		for (j = 0; j < l; j++)
+		for (j = l - 1; j >= 0; j--)
 		{
-			int p = 1;
+			p = 1;
 
-			for (k = l - 1 + j; k < l; k++)
+			for (k = 1; k <= j; k++)
 				p *= 10;
-			result += (s[j] - '0') * p;
+			result += (s[n] - '0') * p;
+			n++;
 		}
 		if (minus % 2 != 0)
 			result *= -1;
