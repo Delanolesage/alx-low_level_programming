@@ -10,7 +10,6 @@
 int _atoi(char *s)
 {
 	int i, j, k, l, minus, countInt, size, result;
-	char *str;
 
 	minus = 0;
 	countInt = 0;
@@ -24,8 +23,6 @@ int _atoi(char *s)
 
 	size = countInt - 1;
 
-	*str = (char *) malloc(sizeof(char) * size);
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
@@ -36,7 +33,7 @@ int _atoi(char *s)
 			break;
 		if (s[i] <= '9' && s[i] >= '0')
 		{
-			str[l++] = s[i];
+			s[l++] = s[i];
 		}
 	}
 
@@ -52,7 +49,7 @@ int _atoi(char *s)
 			{
 				p *= 10;
 			}
-			result += (str[j] - '0') * p;
+			result += (s[j] - '0') * p;
 		}
 		if (minus % 2 != 0)
 			result *= -1;
