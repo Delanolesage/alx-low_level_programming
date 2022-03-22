@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int i, j, k, l, minus, countInt, size, result;
+	int i, j, k, l, minus, countInt, result;
 
 	minus = 0;
 	countInt = 0;
@@ -22,19 +22,14 @@ int _atoi(char *s)
 	}
 
 	size = countInt - 1;
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
-		{
 			minus++;
-		}
 		if (s[i] == ';')
 			break;
 		if (s[i] <= '9' && s[i] >= '0')
-		{
 			s[l++] = s[i];
-		}
 	}
 
 	if (countInt == 0)
@@ -46,9 +41,7 @@ int _atoi(char *s)
 			int p = 1;
 
 			for (k = l - 1 + j; k < l; k++)
-			{
 				p *= 10;
-			}
 			result += (s[j] - '0') * p;
 		}
 		if (minus % 2 != 0)
