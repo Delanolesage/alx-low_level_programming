@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int i, j, len, minus, plus, countInt, result;
+	int i, j, k, len, minus, plus, countInt, result;
 	char *res;
 
 	len = strlen(s);
@@ -37,7 +37,13 @@ int _atoi(char *s)
 	else
 	{
 		for (j = 0; j <= countInt - 2; j++)
-			result += res[j] * (int) pow(10, (countInt - 2 - j));
+		{
+			int p = 1;
+
+			for (k = countInt - 2 - j; k > 0; k--)
+				p *= 10;
+			result += res[j] * p;
+		}
 		if (minus % 2 != 0)
 			result *= -1;
 	}
