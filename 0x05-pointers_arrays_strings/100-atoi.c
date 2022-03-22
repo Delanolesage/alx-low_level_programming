@@ -9,46 +9,27 @@
  */
 int _atoi(char *s)
 {
-	int i, j, k, l, n, p, minus, countInt, result;
+	int sign = 1;
+	unsigned int result = 0;
+	char null_flag = 0;
 
-	minus = 0;
-	countInt = 0;
-	l = 0;
-	n = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == ';')
-			break;
-		if (s[i] <= '9' && s[i] >= '0')
-			countInt++;
-	}
+		if (*s == '-')
+			sign *= -1;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == '-')
-			minus++;
-		if (s[i] == ';')
-			break;
-		if (s[i] <= '9' && s[i] >= '0')
-			s[l++] = s[i];
-	}
-
-	if (countInt == 0)
-		result = 0;
-	else
-	{
-		for (j = l - 1; j >= 0; j--)
+		if (*s >= '0' && *s <= '9')
 		{
-			p = 1;
-
-			for (k = 1; k <= j; k++)
-				p *= 10;
-			result += (s[n] - '0') * p;
-			n++;
+			null_flag = 1;
+			result = result * 10 + *s - '0';
 		}
-		if (minus % 2 != 0)
-			result *= -1;
+
+		else if (null_flag)
+			break;
+		s++;
 	}
+
+	if (sign < 0)
+		result *= -1;
 	return (result);
 }
