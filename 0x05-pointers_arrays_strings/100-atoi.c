@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <math.h>
 
 /**
  * _atoi - converts a string to an integer.
@@ -8,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int i, len, minus, plus, countInt, result;
+	int i, j, len, minus, plus, countInt, result;
 	char *res;
 
 	len = strlen(s);
@@ -35,10 +36,10 @@ int _atoi(char *s)
 		result = 0;
 	else
 	{
+		for (j = 0; j <= countInt - 2; j++)
+			result += res[j] * (int) pow(10, (countInt - 2 - j));
 		if (minus % 2 != 0)
-			result = (int) res * -1;
-		else
-			result = (int) res;
+			result *= -1;
 	}
 	return (result);
 }
