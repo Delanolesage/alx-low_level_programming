@@ -24,7 +24,7 @@ int _atoi(char *s)
 
 	size = countInt - 1;
 
-	*str = (char *) malloc(sizeof(char) *size);
+	*str = (char * ) malloc(sizeof(char) *size);
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -40,7 +40,7 @@ int _atoi(char *s)
 		}
 	}
 
-	if(countInt == 0)
+	if (countInt == 0)
 		result = 0;
 	else
 	{
