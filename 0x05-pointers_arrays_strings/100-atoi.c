@@ -4,7 +4,7 @@
 
 /**
  * _atoi - converts a string to an integer.
- * @dest: the string to be converted
+ * @s: the string to be converted
  * Return: the integer
  */
 int _atoi(char *s)
@@ -24,7 +24,7 @@ int _atoi(char *s)
 
 	size = countInt - 1;
 
-	*str = (char *)malloc(sizeof(char)*size);
+	*str = (char *) malloc(sizeof(char) *size);
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
