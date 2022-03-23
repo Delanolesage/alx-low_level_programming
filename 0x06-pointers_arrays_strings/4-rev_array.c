@@ -7,19 +7,19 @@
  * @n: number of elements of the array
  * void: nothing to return
  */
-char reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
-	int tmp;
+	int start, end, tmp;
 
-	
-	for (i = 0; i < n; i++)
+	start = 0;
+	end = n - 1;
+
+	while (start < end)
 	{
-		tmp0 = a[i];
-		tmpn = a[n -1];
-		a[i + 1]
-		a[i] = src[i];
+		tmp = a[start];
+		a[start] = a[end];
+		a[end] = tmp;
+		start++;
+		end--;
 	}
-	for ( ; i < n; i++)
-		 dest[i] = '\0';
-	return (dest);
 }
