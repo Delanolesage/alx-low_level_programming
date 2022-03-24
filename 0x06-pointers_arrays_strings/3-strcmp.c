@@ -10,34 +10,19 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, lenS1, lenS2, status;
+	int i, status;
 
-	lenS1 = strlen(s1);
-	lenS2 = strlen(s2);
-	status = -1;
-	j = 0;
-
-	if (lenS1 < lenS2)
-		status = -15;
-	else if (lenS1 > lenS2)
-		status = 15;
-	else
+	while (s1[i] != '\0' || s2[i] != '\0')
 	{
-		for (i = 0; i <  lenS1 && s1[i] != '\0'; i++)
+		if(s1[i] != s2[i])
 		{
-			if(s1[i] == s2[i])
-				j++;
-			else if(s1[i] < s2[i])
-			{
-				status = -15;
-			}
-			else
-			{
-				status = 15;
-			}
+			status = s1[i] - s2[i];
+			return status;
 		}
-		if (j == lenS1)
+		else
+		{
 			status = 0;
+		}
 	}
 	return (status);
 }
