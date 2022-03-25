@@ -9,7 +9,7 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char *letters1 = {"ABCDEFGHIJKLMNOPQRSTUVwXYZabcdefghijklmnopqrstuvwxyz"};
+	char *letters1 = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
 	char *letters2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
 	for (i = 0; s[i] != '\0'; i++)
