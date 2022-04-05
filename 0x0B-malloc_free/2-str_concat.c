@@ -28,10 +28,10 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < len1; i++)
 		*(s + i) = *(s1 + i);
-	for (j = len1; *s2++ != '\0'; j++)
-		*(s + i + j) = *(s2 + j - len1);
+	for (j = len1; j < (len1 +len2); j++)
+		*(s + (i + j)) = *(s2 + (j - len1));
 
 	return (s);
 
