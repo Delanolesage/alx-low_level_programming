@@ -15,20 +15,20 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2, i, j;
 
 	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-	if (s1 != NULL && s2 == NULL)
+	{
+		return ("");
+	}
+	if (s1 != NULL && s2 == NULL){
+	{
 		return (s1);
+	}
 	if (s1 == NULL && s2 != NULL)
+	{
 		return (s2);
-	if (s1 == NULL)
-		s1 = "";
-	else
-		len1 = strlen(s1);
+	}
 
-	if (s2 == NULL)
-		s2 = "";
-	else
-		len2 = strlen(s2);
+	len1 = strlen(s1);
+	len2 = strlen(s2);
 
 	s = malloc((len1 + len2 + 1) * sizeof(char));
 	if (s == NULL)
