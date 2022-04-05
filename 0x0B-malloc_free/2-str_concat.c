@@ -30,9 +30,9 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < len1; i++)
 		*(s + i) = *(s1 + i);
-	for (j = len1; j < (len1 + len2); j++)
-		*(s + (i + j)) = *(s2 + (j - len1));
-	*(s + (i + j)) = '\0';
+	for (j = 0, i; i <= (len1 + len2); j++, i++)
+		*(s + i) = *(s2 + j);
+
 	return (s);
 
 }
