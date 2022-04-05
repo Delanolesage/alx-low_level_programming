@@ -30,8 +30,14 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < len1; i++)
 		*(s + i) = *(s1 + i);
-	for (i, j = 0; i <= (len1 + len2); j++, i++)
+
+	j = 0;
+	while (i <= (len1 + len2))
+	{
 		*(s + i) = *(s2 + j);
+		i++;
+		j++;
+	}
 
 	return (s);
 
