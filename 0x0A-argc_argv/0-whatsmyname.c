@@ -2,6 +2,8 @@
 
 /**
  * main - prints the program's name
+ * @argc: number of command line arguments
+ * @argv: array of value command line arguments
  *
  * Return: Always 0.
  */
