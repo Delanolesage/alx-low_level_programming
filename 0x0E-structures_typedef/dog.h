@@ -6,6 +6,9 @@
  * @name: name of the dog
  * @age: age of the dog
  * @owner: name of the owner
+ *
+ * Description: create an object dog with name, age
+ * and the owner's name
  */
 typedef struct dog
 {
