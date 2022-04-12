@@ -10,11 +10,13 @@
  * Description: create an object dog with name, age
  * and the owner's name
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog;
+};
+
+typedef struct dog dog_t;
 
 #endif
