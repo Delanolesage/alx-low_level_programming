@@ -8,46 +8,46 @@
  * @age: the age of the dog
  * @owner: pointer to the owner's name
  *
- * Return: the created dog
+ * Return: a pointer to the created dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, j, z;
-	dog_t *newDog;
+	dog_t *newd;
 
 	for (i = 0; name[i] != '\0'; i++)
-
+		;
 	for (j = 0; owner[j] != '\0'; j++)
-
-	newDog = malloc(sizeof(dog_t));
-	if (newDog == NULL)
+		;
+	newd = malloc(sizeof(dog_t));
+	if (newd == NULL)
 	{
-		free(newDog);
+		free(newd);
 		return (NULL);
 	}
-	newDog->name = malloc(i * sizeof(newDog->name));
+	newd->name = malloc(i * sizeof(newd->name));
 	if (newd->name == NULL)
 	{
-		free(newDog->name);
-		free(newDog);
+		free(newd->name);
+		free(newd);
 		return (NULL);
 	}
 	for (z = 0; z <= i; z++)
 	{
-		(*newDog).name[z] = name[z];
+		(*newd).name[z] = name[z];
 	}
-	(*newDog).age = age;
-	newDog->owner = malloc(j * sizeof(newDog->owner));
-	if (newDog->owner == NULL)
+	(*newd).age = age;
+	newd->owner = malloc(j * sizeof(newd->owner));
+	if (newd->owner == NULL)
 	{
-		free(newDog->name);
-		free(newDog->owner);
-		free(newDog);
+		free(newd->name);
+		free(newd->owner);
+		free(newd);
 		return (NULL);
 	}
 	for (z = 0; z <= j; z++)
 	{
-		newDog->owner[z] = owner[z];
+		newd->owner[z] = owner[z];
 	}
-	return (newDog);
+	return (newd);
 }
