@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * free_dog - frees dogs
- * @d: the dog
+ * free_dog - frees the memory occupied by dog_t type
+ * @d:struct to free
  *
- * Void: nothing to return
+ * Return:void
  */
 void free_dog(dog_t *d)
 {
