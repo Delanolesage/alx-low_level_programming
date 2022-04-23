@@ -1,11 +1,13 @@
-.LC0:
-        .string "Hello, Holberton"
+global main
+	extern printf
+
+	section .text
+
 main:
-        push    rbp
-        mov     rbp, rsp
-        mov     edi, OFFSET FLAT:.LC0
-        mov     eax, 0
-        call    printf
-        mov     eax, 0
-        pop     rbp
-        ret
+	mov rdi, format
+	mov rax, 0
+	call printf
+	mov rax, 0
+	ret
+format:
+	db "Hello, Holberton", 10, 0
