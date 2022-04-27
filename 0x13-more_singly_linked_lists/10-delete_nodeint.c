@@ -1,39 +1,39 @@
 #include "lists.h"
-
 /**
- * delete_nodeint_at_index - deletes a node at an index
- * @head: pointer to the head of the list
- * @index: index of the node to be added
- *
- * Return: the address of the node
+ *delete_nodeint_at_index- unction that deletes the node at index.
+ *@head: a ptr to ptr the listint_t list
+ *@index:the node that should be deleted. Index starts at 0
+ *Return: 1 if it succeeded, -1 if it failed.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *old_node = NULL;
-	listint_t *previous_node = NULL;
-	unsigned int i = 0, list_len = listint_len(*head);
+	listint_t *current;
+	listint_t *temp;
+	unsigned int pos;
 
-	if ((index > list_len) || (list_len == 0))
+	if (head == NULL)
 		return (-1);
-	while (head != NULL)
+	if (*head == NULL)
+		return (-1);
+	current = *head;
+	pos = 0;
+	if (index == 0)
 	{
-		if (i == index)
-		{
-			old_node = *head;
-			if (i == 0)
-			{
-				*head = old_node->next;
-				free(old_node);
-				return (1);
-			}
-			previous_node->next = old_node->next;
-			free(old_node);
-			return (1);
-		}
-		else if ((i + 1) == index)
-			previous_node = *head;
-		head = &((*head)->next);
-		i++;
+		*head = (*head)->next;
 	}
-	return (-1);
+	else
+	{
+		while (pos < (index - 1))
+		{
+			if (current == NULL)
+				return (-1);
+			current = current->next;
+			pos++;
+		}
+		temp = current;
+		current = current->next;
+		temp->next = current == NULL ? NULL : current->next;
+	}
+	free(current);
+	return (1);
 }
