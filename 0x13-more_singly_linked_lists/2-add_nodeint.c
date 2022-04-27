@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * add_nodeint - adds anew node at the beginning of a linked list
+ * add_nodeint - adds anew node at the
+ * beginning of a linked list
  * @head: a pointer to the head of the linked list
  * @n: the number to be added to the list
  *
@@ -16,8 +17,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	if (list == NULL)
 		return (NULL);
+
 	list->n = n;
 	list->next = *head;
+
 	*head = list;
 	return (list);
 }
